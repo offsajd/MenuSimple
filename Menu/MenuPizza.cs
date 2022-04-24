@@ -29,27 +29,27 @@ namespace Menu
                 string option = Console.ReadLine();
                 if (option == "1")
                 {
-
+                    Margaritha.margaritha();
                 }
                 else if (option == "2")
                 {
-
+                    Boczek.boczek();
                 }
                 else if (option == "3")
                 {
-
+                    Calzone.calzone();
                 }
                 else if (option == "4")
                 {
-
+                    Goralska.goralska();
                 }
                 else if (option == "5")
                 {
-
+                    Slaska.slaska();
                 }
                 else if (option == "6")
                 {
-
+                    Zjajem.zjajem();
                 }
                 else if (option == "7")
                 {

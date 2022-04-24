@@ -37,24 +37,19 @@ namespace Menu
                 }
                 else if (option == "3")
                 {
-
+                    OfertaRejestracja.GetOferta();
                 }
                 else if (option == "4")
                 {
-                    OpenUrl("https://www.youtube.com/watch?v=qk1nnAHI1mI");
-                    Console.Clear();
-                    ILogo.WriteLogo();
-                    Console.WriteLine("otworzono link ");
-                    Console.WriteLine(" aby kontynuować naciśnij dowolny klawisz");
-                    Console.ReadKey(true);
+                    Kontakt.getkontakt();
                 }
                 else if (option == "5")
                 {
-
+                    KuponyRabatowe.getKupony();
                 }
                 else if (option == "6")
                 {
-
+                    Zamowienie.GetZamowienie();
                 }
                 else if (option == "7")
                 {
@@ -76,6 +71,7 @@ namespace Menu
 
 
         }
+        
         public static void OpenUrl(string url)
         {
             if (!url.Contains("://")) url = "https://" + url;
@@ -91,25 +87,6 @@ namespace Menu
             Console.WriteLine("]" + message);
         }
 
-//        public static void WriteLogo()
-//        {
-//            string logo = @" 
-//  ===================================
-//||         PIZZERIA NAD WINEM        ||
-//||       _____________________       ||
-//||           _----  _----            ||
-//||          |     ||     |           ||
-//||          |_----||_----|           ||
-//||           _----  _----            ||
-//||          |     ||     |           ||
-//||          |_----||_----|           ||
-//||            WINO & VISTA           ||
-//||        _____________________      ||
-//||   Ulubiona Pizzeria Programistów  ||
-//||            Według Magdy G.        ||
-//||                                   ||
-//  =================================== ";
-//            Console.WriteLine( logo, Color.Cyan );
-//        }
+
     }
 }
